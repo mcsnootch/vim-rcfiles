@@ -9,7 +9,8 @@ set mouse=a
 set scrolloff=3
 set ts=3
 set t_Co=256
-
+set guifont=Monaco:h12
+set hidden
 colorscheme ir_black
 
 " Only do this part when compiled with support for autocommands.
@@ -21,7 +22,7 @@ if has("autocmd")
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
 
-  " Put these in an autocmd group, so that we can delete them easily.
+ " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
   au!
 
